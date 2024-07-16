@@ -1,8 +1,8 @@
 import User from "./User.js";
 
 class Docente extends User {
-  constructor(nome, sobrenome, email, nascimento, role = "docente", ativo) {
-    super(nome, sobrenome, email, nascimento, role, ativo);
+  constructor(nomeCompleto, email, nascimento, role = "docente", ativo) {
+    super(nomeCompleto, email, nascimento, role, ativo);
   };
   
   aprovaEstudante(estudante, curso) {

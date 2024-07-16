@@ -20,14 +20,10 @@ class User {
     sobrenome = sobrenome.join(" ");
     this.#nome = nome;
     this.#sobrenome = sobrenome;
-  }
+  };
 
   get nome() {
     return `${this.#nome} ${this.#sobrenome}`;
-  };
-
-  get sobrenome() {
-    return this.#sobrenome;
   };
 
   get email() {
